@@ -22,7 +22,7 @@ int findPages(vector<int>& arr, int n, int m) {
     if(n<m){
         return -1;
     }
-       int start =0;
+       int start =*max_element(arr.begin(),arr.end());
        int sum =0;
        for(int i=0; i<n; i++){
            sum+=arr[i];
